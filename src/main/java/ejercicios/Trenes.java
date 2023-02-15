@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
+import java.util.TreeMap;
 import org.apache.commons.lang3.RandomStringUtils;
 
 /**
@@ -81,7 +82,7 @@ public class Trenes {
     //y el nº de pasajeros que puede llevar el tren
     public static Map<Integer, Tren> generarMap(int [][] matriz){
         
-        Map<Integer, Tren> conjuntoTrenes = new HashMap<>();
+        Map<Integer, Tren> conjuntoTrenes = new TreeMap<>();
         
         
         for (int i = 0; i < matriz.length; i++) {
